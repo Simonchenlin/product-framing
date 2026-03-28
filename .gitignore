@@ -1,0 +1,5 @@
+# Sensitive files
+settings.json
+*.json
+.env
+*.log
