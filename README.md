@@ -1,95 +1,95 @@
 # Product Framing Skill
 
-一个系统性的提问框架，帮助在动手写代码之前，系统性地发现和结构化产品需求。
+A systematic questioning framework that helps you uncover and structure product requirements before writing any code.
 
-## 核心理念
+## Core Philosophy
 
 > "What you don't ask, you don't get."
 
-在开始一个产品或功能前，很多需求是模糊的。这个 skill 通过六个阶段的引导式提问，帮助你挖掘出完整的需求全貌。
+Before starting a product or feature, many requirements are vague. This skill uses six phases of guided questioning to help you discover the complete picture of what you're building.
 
-## 六个发现阶段
+## Six Discovery Phases
 
 ```
-Phase 1: 业务理解    → 这个产品解决什么问题？
-Phase 2: 角色权限    → 谁会用？权限怎么分？
-Phase 3: 核心模块    → 有哪些功能模块？关系是什么？
-Phase 4: 数据实体    → 要管理哪些数据？关系是什么？
-Phase 5: 边界集成    → 对接哪些外部系统？规模要求？
-Phase 6: 验收标准    → 怎么才算成功？
+Phase 1: Business Context    → What problem does this product solve?
+Phase 2: Roles & Permissions → Who will use it? How is access controlled?
+Phase 3: Core Modules        → What features exist? How do they relate?
+Phase 4: Data Model          → What data needs managing? What are the relationships?
+Phase 5: Boundaries & Integration → What external systems? Scale requirements?
+Phase 6: Acceptance Criteria → How do we define success?
 ```
 
-## 快速开始
+## Quick Start
 
-### 适用场景
+### When to Use
 
-- 开始一个新產品或重大功能
-- 需求模糊或不完整
-- 从想法转向实现
-- 需要对齐干系人范围
+- Starting a new product or major feature
+- Requirements are vague or incomplete
+- Transitioning from idea to implementation
+- Need to align stakeholders on scope
 
-### 不适用场景
+### When NOT to Use
 
-- 需求已完全文档化
-- 用户明确只需要实现
-- 简单 bug 修复或小功能
+- Requirements are already fully documented
+- User explicitly wants implementation only
+- Simple bug fix or minor feature
 
-## 使用方式
+## Usage
 
-在 Claude Code 中输入：
+In Claude Code, simply type:
 
 ```
 /product-framing
 ```
 
-然后 AI 会逐步引导你完成六个阶段的提问。
+The AI will guide you through all six phases with targeted questions.
 
-## 示例对话
+## Example Conversation
 
-**用户**: "我想做一个库存管理系统"
+**User**: "I want to build an inventory management system"
 
-**AI (使用此 skill)**:
+**AI (using this skill)**:
 
-> 好的，让我们一步步梳理清楚。先从 Phase 1 开始：
+> Great, let's work through this systematically. Starting with Phase 1:
 >
-> **Phase 1 - 业务理解：**
-> 1. 这个库存管理系统是做什么用的？解决什么问题？
-> 2. 是什么行业/领域的库存管理？
-> 3. 有哪些核心业务需要管理？（采购？销售？生产？）
-> 4. 目标用户是谁？仓库管理员？财务？采购员？
+> **Phase 1 - Business Context:**
+> 1. What does this inventory management system do? What problem does it solve?
+> 2. What industry/domain is this for?
+> 3. What core business processes need managing? (Purchasing? Sales? Manufacturing?)
+> 4. Who are the target users? Warehouse staff? Finance? Procurement?
 
-[继续逐步引导，直到完成所有阶段]
+[Continues through all phases]
 
-## 检查清单
+## Checklist
 
 ```
-□ 产品背景：解决什么问题？
-□ 目标用户：谁会用？多少人会用？
-□ 核心模块：模块列表和关系
-□ 角色权限：至少3个核心角色
-□ 业务流程：关键流程图
-□ 数据实体：核心表结构
-□ 集成需求：外部系统对接
-□ 边界条件：规模/性能/并发
-□ 验收标准：上线checklist
-□ 风险点：已知风险和应对
+□ Product Background: What problem does it solve?
+□ Target Users: Who will use it? How many users?
+□ Core Modules: Module list and relationships
+□ Roles & Permissions: At least 3 key roles
+□ Business Flows: Critical process diagrams
+□ Data Entities: Core table structures
+□ Integration Needs: External system connections
+□ Boundaries: Scale/performance/concurrency
+□ Acceptance Criteria: Launch checklist
+□ Risks: Known risks and mitigations
 ```
 
-## 常见错误
+## Common Mistakes
 
-| 错误 | 为什么重要 |
-|------|-----------|
-| 跳过 Phase 1 直接进入功能列表 | 没有方向感，后续决策容易偏离核心价值 |
-| 不问边界条件 | 上线后才发现性能/规模问题 |
-| 不确认角色权限 | 开发一半发现权限设计冲突 |
-| 不问验收标准 | 交付时双方认知不一致 |
+| Mistake | Why It Matters |
+|---------|----------------|
+| Skipping Phase 1 and jumping to feature lists | No sense of direction; decisions drift from core value |
+| Not asking about boundaries | Performance/scale issues discovered after launch |
+| Not confirming roles/permissions | Permission conflicts discovered mid-development |
+| Not defining acceptance criteria | Misaligned expectations at delivery |
 
-## 文件结构
+## Repository Structure
 
 ```
 product-framing/
-├── SKILL.md      # Skill 定义文件
-└── README.md     # 说明文档
+├── SKILL.md      # Skill definition file
+└── README.md     # This documentation
 ```
 
 ## License
